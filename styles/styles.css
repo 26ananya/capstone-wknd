@@ -239,7 +239,7 @@ main > .section > div {
 }
 
 main > .section:first-of-type {
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 @media (width >= 900px) {
@@ -254,4 +254,14 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+.carousel .button-container a, .columns .button-container a, .cards-container .button-container a, .submit-wrapper button {
+  background-color: #ffea00 !important;
+  border-radius: 0 !important;
+  color: #202020 !important;
+  /* float: left !important; */
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 1em 2.5em !important;
+  text-transform: uppercase !important;
 }
