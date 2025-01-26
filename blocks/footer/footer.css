@@ -28,7 +28,7 @@ footer .footer p {
   footer .button {
     all: unset !important;
 }
-.footer-content .default-content-wrapper {
+.footer .default-content-wrapper {
   display: flex !important
 ;
   justify-content: space-between !important;
@@ -36,11 +36,11 @@ footer .footer p {
 }
 
 
-.footer-content div:first-child {
+.footer div:first-child {
     padding: 0 !important;
 }
 
-footer .footer-content ul {
+footer ul {
   display: flex;
   gap: 18px;
   margin: 30px;
@@ -49,14 +49,14 @@ footer .footer-content ul {
 
 
 }
-.footer-content p:first-child {
+.footer p:first-child {
   flex-grow: 0.3 !important;
 }
 
-.footer-content ul:nth-child(2) {
+.footer ul:nth-child(2) {
   flex-grow: 1 !important;
 }
-.footer-content ul:nth-child(4) {
+.footer ul:nth-child(4) {
   background: #fff;
   padding: 8px !important;
   margin-left: 8px !important;
@@ -68,4 +68,18 @@ footer li a, footer .footer-data a {
 
 footer .default-content-wrapper p {
   padding-top: 20px;
+}
+
+footer .default-content-wrapper a {
+  color: white !important; 
+  /* This will make all links inside .default-content-wrapper black */
+  text-decoration: underline;
+ 
+}
+
+footer .default-content-wrapper a:hover {
+  color: black !important; 
+  /* This will make all links inside .default-content-wrapper black */
+  text-decoration: underline;
+ 
 }

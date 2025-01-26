@@ -168,3 +168,17 @@
 .form .toggle-wrapper input:checked + .slider::before {
   transform: translateX(24px);
 }
+
+
+.modal-content .default-content-wrapper .button-container a{
+  all:unset;
+}
+
+
+.modal-content .default-content-wrapper .button-container a:hover{
+  text-decoration: underline;
+}
+.modal dialog {
+  background-color:#202020;;
+  color: white;
+}
