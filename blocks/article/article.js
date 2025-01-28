@@ -5,13 +5,13 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 export default async function decorate(block) {
   const response = await fetch("query-index.json");
   const jsonData = await response.json();
-  console.log(jsonData);
+ 
   const articleData = jsonData.data.filter(item => item.article.includes("true"));
-  console.log(articleData);
+  
   if(articleData){
     const articleCardWrapper= document.createElement('div');
     articleCardWrapper.className='articleWrapper';
-    if(articleData){
+
       articleData.forEach(item => {
         const articleCard = document.createElement('div');
         articleCard.className = 'articleCard';
@@ -33,7 +33,7 @@ export default async function decorate(block) {
         block.appendChild(articleCardWrapper);
         
       });
-    }
+    
  
   }
 

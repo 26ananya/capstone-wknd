@@ -26,24 +26,40 @@
   object-fit: cover;
 }
 
-.userlists picture img {
+.user-profile > ul > li {
+   
+  background-color: var(--background-color);
+  text-align: center;
+  border: none !important;
+  list-style: none;
+}
+
+.user-profile > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.user-profile  .cards-card-image picture img {
   border-radius: 100%;
   width: 164px !important;
   height: 164px !important;
 }
 
-
-.userlists li {
-  border: none !important;
-  text-align: center !important;
-}
-
-
-.userlists ul ul {
-  list-style-type: none;
+.user-profile .cards-card-body ul{
   display: flex
-;
-  gap: 16px;
-  padding: 0;
-  justify-content: center;
+  ;
+      list-style: none;
+      justify-content: center;
+      gap: 16px;
+      padding: 0;
 }
+
+
+
+
+
+
+
+
+
