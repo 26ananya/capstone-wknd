@@ -37,3 +37,15 @@
 .articleCard:hover {
   transform: translateY(-5px);
 }
+
+@media (width < 900px) {
+
+
+.articleWrapper{
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+}
+}
